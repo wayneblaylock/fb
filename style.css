@@ -4,10 +4,12 @@ body{
     margin: 0;
 }
 
+
 .heading{
     margin: 0;
+    color: white;
     text-align: center;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(72, 99, 255);
     padding-bottom: 20px;
 }
 
@@ -17,23 +19,24 @@ body{
 }
 
 .heading a{
-    background-color: white;
-    color: rgb(0, 0, 125);
-    border: solid rgb(0, 0, 125) 2px;
-    padding: 7px;
-    border-radius: 15px;
+  background-color: rgb(226, 139, 57);
+    color: rgb(255, 255, 255);
+    /*border: solid rgb(255, 255, 255) 2px;*/
+    padding: 12px;
+    border-radius: 20px;
     transition: .5s;
+    font-size: 18px;
 }
 
 .heading a:hover{
-    background-color: rgb(0, 0, 125);
-    color: white;
+    background-color: rgb(255, 153, 0);
+    color: rgb(255, 255, 255);
     transition: .5s;
 }
 
 .flex_container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; 
 }
 
 .flex_container h2{
@@ -42,7 +45,7 @@ body{
 
 .preferences{
     width: 50vw;
-    background-color: rgb(212, 212, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .preferences form{
@@ -90,7 +93,7 @@ body{
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: rgb(255, 153, 0);
   }
   
   input:focus + .slider {
@@ -152,7 +155,7 @@ body{
   
   /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: rgb(255, 153, 0);
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -182,7 +185,7 @@ body{
 
 .city_inputs{
     width: 50vw;
-    background-color: rgb(189, 189, 189);
+    background-color: rgba(172, 172, 172, 0.685);
     box-sizing: border-box;
     padding: 30px 50px;
     text-align: center;
@@ -203,7 +206,9 @@ body{
     text-align: center;
     margin: 0;
     padding: 10px;
-    background-color: rgb(0, 0, 125);
+    box-sizing: border-box;
+    height: 50px;
+    background-color: rgb(72, 99, 255);
     color: white;
     font-size: 25px;
     transition: .4s;
@@ -211,8 +216,9 @@ body{
 }
 
 .button:hover{
-  background-color: rgb(157, 146, 255);
-  transition: .4s;
+  font-size: 28px;
+  padding: 9px;
+  background-color: rgb(255, 153, 0);
 }
 
 .results h2{
@@ -232,15 +238,37 @@ body{
 .results li{
   text-decoration: none;
   color: rgb(48, 48, 48);
-  background-color: #cacaca;
   padding: 5px 15px;
-  margin: 50px;
+  margin: 15px 15px;
   border-radius: 20px;
-  border: solid rgb(48, 48, 48) 1px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.26);
+  transition: .3s;
+}
+
+.results li:hover{
+  background-color: rgb(72, 99, 255);
+  color: white;
 }
 
 .results a{
   text-decoration: none;
+  margin-bottom: 30px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(134, 134, 134);
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+footer a{
+  color: white;
+  padding: 5px;
 }
