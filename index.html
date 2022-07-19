@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="media/fb_icon.png">
+    <title>FB URL Generator</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="heading">
+        <h1>Facebook Profile URL Generator</h1>
+        <a href="instructions.html"><strong>Instuctions Here</strong></a>
+    </div>
+    <div class="flex_container">
+    <div class="preferences">
+        <h2>Preferences</h2>
+        <form action="">
+            <h3>Auto Open Links?</h3>
+            <label class="switch">
+                <input type="checkbox" id="auto_open">
+                <span class="slider round"></span>
+            </label>
+            <p class="note">Note: You may need to allow popups on this site for this feature to work.</p>
+            <h3>Target Age Range?</h3>
+            <label class="container">18-30
+                <input type="checkbox" checked="checked" id="younger">
+                <span class="checkmark"></span>
+              </label>
+              <label class="container">30+
+                <input type="checkbox" checked="checked" id="older">
+                <span class="checkmark"></span>
+              </label>
+        </form>
+    </div>
+    <div class="city_inputs">
+        <h2>Citys</h2>
+        <p>List the unique area filter for each city you cover below. Check the <a href="instructions.html">Instructions</a> page for more detail.</p>
+        <textarea name="" id="city_filters" cols="30" rows="8" class="filter_box"></textarea>
+
+    </div>
+    </div>
+    <p class="button" onclick="generate_links()">Generate!</p>
+
+    <div class="results">
+    <h2>Generated Links Will Appear Below!</h2>
+    <div class="result_links_container" id="results">
+
+    </div>
+    </div>
+    </div>
+    <footer>
+        <a href="index.html">Facebook&nbsp;URL&nbsp;Generator</a>
+        <a href="instructions.html">Instructions</a>
+        <a href="privacy_policy.html" target="blank_">Privacy&nbsp;Policy</a>
+        <a href="terms_of_service.html" target="blank_">Terms&nbsp;of&nbsp;Service</a>
+    </footer>
+</body>
+</html>

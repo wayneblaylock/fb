@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+}
+
+.contents{
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+h1{
+    background-color: rgb(72, 99, 255);
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 30px;
+}
+
+h2{
+    color: rgb(204, 99, 0);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(134, 134, 134);
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  footer a{
+    color: white;
+    padding: 5px;
+  }
