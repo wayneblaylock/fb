@@ -4,8 +4,10 @@ body{
 
 .contents{
     max-width: 750px;
+    padding: 0 25px;
     margin: auto;
     margin-bottom: 50px;
+    box-sizing: border-box;
 }
 
 h1{
@@ -26,7 +28,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(134, 134, 134);
+    background-color: rgba(128, 128, 128, 0.85);
     color: white;
     text-align: center;
     padding: 5px;
@@ -35,4 +37,11 @@ footer {
   footer a{
     color: white;
     padding: 5px;
+  }
+
+  @media only screen and (max-width: 536px) {
+    .contents{
+        margin-bottom: 70px;
+        word-wrap: break-word;
+    }
   }
