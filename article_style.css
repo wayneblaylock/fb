@@ -19,6 +19,13 @@ h1{
     border-radius: 30px;
 }
 
+.video{
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 h2{
     color: rgb(204, 99, 0);
 }
